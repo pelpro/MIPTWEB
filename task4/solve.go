@@ -13,7 +13,7 @@ return odd
 func PowerGenerator(a int) func() int {
 powern := 1
 return func() int {
-powern = powern*a
+powern *= a
 return powern
 }
 }
@@ -35,4 +35,4 @@ word = ""
 }
 }
 return countw
-
+}
