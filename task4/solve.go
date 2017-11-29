@@ -1,4 +1,3 @@
-package main
 import "unicode"
 func RemoveEven(mass []int) []int {
 odd := make([]int, 0)
