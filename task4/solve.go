@@ -1,3 +1,4 @@
+package main
 import "unicode"
 func RemoveEven(mass []int) []int {
 odd := make([]int, 0)
@@ -21,11 +22,10 @@ func DifferentWordsCount(str string) int {
 maps := make(map[string]bool)
 countw := 0
 word := ""
-for _, sym := range (x + " ") {
+for _, sym := range (str + " ") {
 if unicode.IsLetter(sym) {
 word += string(unicode.ToLower(sym))
-}
-else if word != "" {
+} else if word != "" {
 if !maps[word] {
 countw += 1
 }
@@ -35,3 +35,5 @@ word = ""
 }
 return countw
 }
+
+
