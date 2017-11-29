@@ -4,7 +4,7 @@ func RemoveEven(mass []int) []int {
 odd := make([]int, 0)
 for _, number := range mass {
 if number % 2 == 1 {
-mass = append(odd, number)
+odd = append(odd, number)
 }
 }
 return odd
