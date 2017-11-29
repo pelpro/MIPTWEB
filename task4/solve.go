@@ -24,7 +24,7 @@ countw := 0
 word := ""
 for _, sym := range (x + " ") {
 if unicode.IsLetter(sym) {
-word = word + string(unicode.ToLower(sym))
+word += string(unicode.ToLower(sym))
 }
 else if word != "" {
 if !maps[word] {
@@ -35,4 +35,4 @@ word = ""
 }
 }
 return countw
-}
+
